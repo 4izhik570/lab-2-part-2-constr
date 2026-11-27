@@ -14,6 +14,7 @@ public class Street
     [MaxLength(60)]
     public string Name { get; set; } = null!;
 
+    // Новое свойство сущности Street: почтовый индекс
     [MaxLength(6)]
     [Column(TypeName = "char(6)")]
     public string? PostalIndex { get; set; }
